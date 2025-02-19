@@ -40,7 +40,8 @@ WORKDIR /home
 RUN ls
 
 # Copier le script de démarrage de JupyterLab
-COPY start-jupyter.sh .
+COPY ../start-jupyter.sh .
+
 
 # Donner les permissions d'exécution au script
 RUN chmod +x start-jupyter.sh
