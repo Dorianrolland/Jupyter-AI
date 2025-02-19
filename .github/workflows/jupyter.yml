@@ -14,6 +14,6 @@ jobs:
     - name: Pousser l'image Docker taguée
       run: |
           d=$(date +%Y-%m-%d--%H-%M-%S)
-          docker tag dorianalp38/Jupyter-AI:latest dorianalp38/Jupyter-AI:$d
-          docker push dorianalp38/Jupyter-AI:$d
-          docker push dorianalp38/Jupyter-AI:latest
+          docker tag dorianalp38/jupyter-ai:latest dorianalp38/jupyter-ai:$d
+          docker push dorianalp38/jupyter-ai:$d
+          docker push dorianalp38/jupyter-ai:latest
