@@ -11,7 +11,7 @@ jobs:
       run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
     - name: Build the Docker image
       run: |
-        docker build --file Dockerfiles/Dockerfile2 -t dorianalp38/jupyter-ai:latest ..
+        docker build --file Dockerfiles/Dockerfile2 -t dorianalp38/jupyter-ai:latest .
     - name: Push the tagged Docker image
       run: |
         d=$(date +%Y-%m-%d--%H-%M-%S)
