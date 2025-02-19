@@ -16,7 +16,8 @@ RUN apt-get update && apt-get install -y \
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
 # Ajouter Ollama au PATH
-ENV PATH="/root/.ollama/bin:$PATH""
+ENV PATH="/root/.ollama/bin:$PATH"
+
 
 # Démarrer Ollama en arrière-plan et attendre qu'il soit prêt
 RUN ollama serve & \
