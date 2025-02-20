@@ -40,7 +40,7 @@ WORKDIR /home
 RUN ls
 
 # Copier le script de démarrage de JupyterLab
-COPY ../start-jupyter.sh .
+COPY ../start-jupyter2.sh .
 
 
 # Donner les permissions d'exécution au script
@@ -50,5 +50,5 @@ RUN chmod +x start-jupyter.sh
 EXPOSE 11434 8888
 
 # Utiliser le script comme point d'entrée
-ENTRYPOINT ["/bin/bash", "/home/start-jupyter.sh"]
+ENTRYPOINT ["/bin/bash", "/home/start-jupyter2.sh"]
 
