@@ -7,7 +7,12 @@ ollama serve &
 sleep 5
 
 # Démarrer JupyterLab
-jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' &
+jupyter lab --ip=0.0.0.0 --port=8888 --no-browser \
+    --ServerApp.token='' \
+    --ServerApp.password='' \
+    --ServerApp.allow_origin='*' \
+    --ServerApp.disable_check_xsrf=True \
+    --ServerApp.trust_xheaders=True
 
 # Attendre que JupyterLab soit lancé
 sleep 5
