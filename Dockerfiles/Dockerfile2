@@ -44,7 +44,7 @@ COPY ../start-jupyter2.sh .
 
 
 # Donner les permissions d'exécution au script
-RUN chmod +x start-jupyter.sh
+RUN chmod +x start-jupyter2.sh
 
 # Exposer les ports nécessaires
 EXPOSE 11434 8888
