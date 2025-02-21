@@ -7,5 +7,5 @@ ollama serve &
 sleep 5
 
 # Démarrer JupyterLab
-jupyter lab --ip=0.0.0.0 --port=8889 --allow-root \
+jupyter lab --ip=0.0.0.0 --port=8888 --allow-root \
    
